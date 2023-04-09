@@ -1,0 +1,1 @@
+dist資料夾裡的Record是執行檔

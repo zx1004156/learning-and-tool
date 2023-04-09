@@ -17,26 +17,26 @@ mywb = load_workbook(
 
 start = time.time()
 
-mywb.create_sheet("三民店(SM)")
-mywb.create_sheet("土城店(TC)")
-mywb.create_sheet("中清店(CS)")
-mywb.create_sheet("北投店(BE)")
-#mywb.create_sheet("北門店(BM)")
-mywb.create_sheet("北港店(BK)")
-mywb.create_sheet("板橋店(PC)")
-mywb.create_sheet("苗栗店(ML)")
-mywb.create_sheet("新仁店(XJ)")
+mywb.create_sheet("")
+mywb.create_sheet("")
+mywb.create_sheet("")
+mywb.create_sheet("")
+#mywb.create_sheet("")
+mywb.create_sheet("")
+mywb.create_sheet("")
+mywb.create_sheet("")
+mywb.create_sheet("")
 
 sheet = mywb["工作表1"]
-sheet1 = mywb["三民店(SM)"]
-sheet2 = mywb["土城店(TC)"]
-sheet3 = mywb["中清店(CS)"]
-sheet4 = mywb["北投店(BE)"]
-#sheet5 = mywb["北門店(BM)"]
-sheet6 = mywb["北港店(BK)"]
-sheet7 = mywb["板橋店(PC)"]
-sheet8 = mywb["苗栗店(ML)"]
-sheet9 = mywb["新仁店(XJ)"]
+sheet1 = mywb[""]
+sheet2 = mywb[""]
+sheet3 = mywb[""]
+sheet4 = mywb[""]
+#sheet5 = mywb[""]
+sheet6 = mywb[""]
+sheet7 = mywb[""]
+sheet8 = mywb[""]
+sheet9 = mywb[""]
 
 
 sheet1['A1'] = '店號'
@@ -163,7 +163,7 @@ for n in range(1, sheet.max_row+1):
     s9 = 2
 
 for t1 in range(len(c)):
-    if c[t1] == "三民店(SM)":
+    if c[t1] == "":
         sheet1['A'+str(s1)] = a[t1]
         sheet1['B'+str(s1)] = b[t1]
         sheet1['C'+str(s1)] = c[t1]
@@ -186,7 +186,7 @@ for t1 in range(len(c)):
         sheet2['I'+str(s2)] = i[t1]
         s2+=1
     
-    elif c[t1] == "中清店(CS)":
+    elif c[t1] == "":
         sheet3['A'+str(s3)] = a[t1]
         sheet3['B'+str(s3)] = b[t1]
         sheet3['C'+str(s3)] = c[t1]
@@ -198,7 +198,7 @@ for t1 in range(len(c)):
         sheet3['I'+str(s3)] = i[t1]
         s3+=1
 
-    elif c[t1] == "北投店(BE)":
+    elif c[t1] == "":
         sheet4['A'+str(s4)] = a[t1]
         sheet4['B'+str(s4)] = b[t1]
         sheet4['C'+str(s4)] = c[t1]
@@ -222,7 +222,7 @@ for t1 in range(len(c)):
         sheet6['I'+str(s6)] = i[t1]
         s6+=1
 
-    elif c[t1] == "板橋店(PC)":
+    elif c[t1] == "":
         sheet7['A'+str(s7)] = a[t1]
         sheet7['B'+str(s7)] = b[t1]
         sheet7['C'+str(s7)] = c[t1]
@@ -234,7 +234,7 @@ for t1 in range(len(c)):
         sheet7['I'+str(s7)] = i[t1]
         s7+=1
 
-    elif c[t1] == "苗栗店(ML)":
+    elif c[t1] == "":
         sheet8['A'+str(s8)] = a[t1]
         sheet8['B'+str(s8)] = b[t1]
         sheet8['C'+str(s8)] = c[t1]

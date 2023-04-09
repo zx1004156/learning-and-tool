@@ -24,10 +24,10 @@ def run_webdriver():
     chrome = webdriver.Chrome("F:\\Python(Git)\\Python_Project\\爬蟲\\chromedriver.exe",chrome_options=options)
     chrome.get("")
     account = chrome.find_elements(By.XPATH,'//*[@id="account"]')[0]
-    account.send_keys("STfinance")
+    account.send_keys("")
 
     pw = chrome.find_elements(By.XPATH,'//*[@id="passwd"]')[0]
-    pw.send_keys("ST43211700")
+    pw.send_keys("")
 
     click1 = chrome.find_element(By.XPATH,'//*[@id="send"]')
     click1.click()#送驗證碼
